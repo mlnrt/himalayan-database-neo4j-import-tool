@@ -1,0 +1,21 @@
+# IDE
+.idea
+.vscode
+
+#Passwords and tokens
+.env
+
+# Unit test
+.pytest_cache/
+
+#Virtual environment
+
+#Himalayan Database files
+*.zip
+*.CDX
+*.DBF
+*.FPT
+*/Himalayan Databasse/
+*/HIMDATA/
+*.exe
+*.DLL

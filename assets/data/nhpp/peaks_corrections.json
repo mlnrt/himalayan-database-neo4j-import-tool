@@ -1,0 +1,260 @@
+{
+  "NHPP_PEAKS_NOT_TO_IMPORT": ["GIMI", "CHMM", "CHWE"],
+  "PEAKVISOR_NOT_TO_IMPORT": ["CHMR"],
+  "HD_PEAK_CORRECTIONS": [
+    {
+      "PEAKID": "LAMP",
+      "PKNAME2": "Langbo Kangri, Langpo Kangri"
+    },
+    {
+      "PEAKID": "DROM",
+      "PKNAME2": "Longridge Peak"
+    }
+  ],
+  "NHPP_PEAKS_CORRECTIONS": [
+    {
+      "NHPP_ID": "ANN4",
+      "PROVINCE": "Gandaki Pradesh"
+    },
+    {
+      "NHPP_ID": "AMAD",
+      "LAT": "27.861804",
+      "LON": "86.860078"
+    },
+    {
+      "NHPP_ID": "ASJW",
+      "DISTRICT": "Humla/NC"
+    },
+    {
+      "NHPP_ID": "CHUE",
+      "LAT": "28.736189",
+      "LON": "84.034811"
+    },
+    {
+      "NHPP_ID": "CHOY",
+      "LAT": "28.096408",
+      "LON": "86.6595"
+    },
+    {
+      "NHPP_ID": "CHAB",
+      "PROVINCE": "Province 1"
+    },
+    {
+      "NHPP_ID": "CHAP",
+      "RANGE": "Janak"
+    },
+    {
+      "NHPP_ID": "CHAW",
+      "ID": "CHA2",
+      "PROVINCE": "Province 1"
+    },
+    {
+      "NHPP_ID": "CHOB",
+      "DISTRICT": "Dolakha"
+    },
+    {
+      "NHPP_ID": "CHUK",
+      "NAME": "Chhukung Tse",
+      "ALTERNATE_NAMES": ""
+    },
+    {
+      "NHPP_ID": "CHUR",
+      "ID": "CHRW",
+      "ALTERNATE_NAMES": "Churen Himal West",
+      "PROVINCE": "Karnali Pradesh"
+    },
+    {
+      "NHPP_ID": "CPHH",
+      "RANGE": "Kanchenjunga"
+    },
+    {
+      "NHPP_ID": "DANG",
+      "RANGE": "Kanchenjunga"
+    },
+    {
+      "NHPP_ID": "DANS",
+      "RANGE": "Kanjiroba"
+    },
+    {
+      "NHPP_ID": "DZA1",
+      "ALTERNATE_NAMES": "Dzanye",
+      "RANGE": "Kanchenjunga"
+    },
+    {
+      "NHPP_ID": "DOMK",
+      "RANGE": "Kanchenjunga"
+    },
+    {
+      "NHPP_ID": "GAN4",
+      "LAT": "28.345024",
+      "LON": "85.079139"
+    },
+    {
+      "NHPP_ID": "GHEN",
+      "LAT": "28.247802",
+      "LON": "85.470848"
+    },
+    {
+      "NHPP_ID": "GHYM",
+      "ID": "GHYP"
+    },
+    {
+      "NHPP_ID": "HUNK",
+      "ID": "HNKU"
+    },
+    {
+      "NHPP_ID": "JBRM",
+      "DISTRICT": "Dolakha"
+    },
+    {
+      "NHPP_ID": "JBRN",
+      "DISTRICT": "Dolakha"
+    },
+    {
+      "NHPP_ID": "JYAC",
+      "PROVINCE": "Sudhurpashchim Pradesh"
+    },
+    {
+      "NHPP_ID": "KAIM",
+      "ALTERNATE_NAMES": "Kaipuchonam",
+      "LAT": "29.726133",
+      "LON": "82.780125"
+    },
+    {
+      "NHPP_ID": "KAGM",
+      "ALTERNATE_NAMES": "Kagmara I",
+      "LAT": "29.137825",
+      "LON": "82.758887"
+    },
+    {
+      "NHPP_ID": "KARY",
+      "LAT": "27.733585",
+      "LON": "86.611572"
+    },
+    {
+      "NHPP_ID": "KASI",
+      "LAT": "29.283037",
+      "LON": "82.552581"
+    },
+    {
+      "NHPP_ID": "KESH",
+      "ALTERNATE_NAMES": "Kesang Khang,UAAA Peak",
+      "LAT": "28.921361",
+      "LON": "84.000361"
+    },
+    {
+      "NHPP_ID": "KGCH",
+      "ALTERNATE_NAMES": "UIAA Peak"
+    },
+    {
+      "NHPP_ID": "KGKP",
+      "PROVINCE": "Bagmati Pradesh"
+    },
+    {
+      "NHPP_ID": "KJRM",
+      "PROVINCE": "Karnali Pradesh"
+    },
+    {
+      "NHPP_ID": "KJRN",
+      "LAT": "29.385033",
+      "LON": "82.641918"
+    },
+    {
+      "NHPP_ID": "KMJG",
+      "ALTERNATE_NAMES": "Khumjung,Khamjung"
+    },
+    {
+      "NHPP_ID": "KNCH",
+      "ALTERNATE_NAMES": "Kangtsune,Kangchunne,Kanchauni Lekh,Kanchauni,Kang Chunne,Kang Chunne Peak"
+    },
+    {
+      "NHPP_ID": "KNGT",
+      "RANGE": "Kanjiroba"
+    },
+    {
+      "NHPP_ID": "LIK1",
+      "PROVINCE": "Bagmati Pradesh"
+    },
+    {
+      "NHPP_ID": "LNPO",
+      "DISTRICT": "Taplejung/NI",
+      "PROVINCE": "Province 1",
+      "RANGE": "Kanchenjunga"
+    },
+    {
+      "NHPP_ID": "LHAS",
+      "RANGE": "Kanjiroba"
+    },
+    {
+      "NHPP_ID": "MAK1",
+      "LAT": "27.890887",
+      "LON": "87.08841"
+    },
+    {
+      "NHPP_ID": "MNSL",
+      "ALTERNATE_NAMES": "Manshail",
+      "LAT": "29.301833",
+      "LON": "83.813229"
+    },
+    {
+      "NHPP_ID": "MUS2",
+      "ALTERNATE_NAMES": "Mustang Peak"
+    },
+    {
+      "NHPP_ID": "NALA",
+      "ALTERNATE_NAMES": "Nalakankar North"
+    },
+    {
+      "NHPP_ID": "NAN1",
+      "RANGE": "Kanchenjunga"
+    },
+    {
+      "NHPP_ID": "NAN2",
+      "RANGE": "Kanchenjunga"
+    },
+    {
+      "NHPP_ID": "NIMK",
+      "PROVINCE": "Karnali Pradesh"
+    },
+    {
+      "NHPP_ID": "NGOK",
+      "ALTERNATE_NAMES": "Ngojumba Kang II,Ngozumpa Kang II"
+    },
+    {
+      "NHPP_ID": "NORB",
+      "RANGE": "Kanjiroba"
+    },
+    {
+      "NHPP_ID": "PAND",
+      "RANGE": "Kanchenjunga"
+    },
+    {
+      "NHPP_ID": "PUTH",
+      "PROVINCE": "Karnali Pradesh"
+    },
+    {
+      "NHPP_ID": "RON1",
+      "ALTERNATE_NAMES": "Lunag Ri,Lunag I",
+      "LAT": "28.051424",
+      "LON": "86.549701"
+    },
+    {
+      "NHPP_ID": "RON2",
+      "ALTERNATE_NAMES": "Lunag West,Little Lunag",
+      "LAT": "28.05",
+      "LON": "86.534866"
+    },
+    {
+      "NHPP_ID": "THOC",
+      "PROVINCE": "Gandaki Pradesh"
+    },
+    {
+      "NHPP_ID": "TSAR",
+      "RANGE": "Kanti"
+    },
+    {
+      "NHPP_ID": "YANK",
+      "RANGE": "Kanchenjunga"
+    }
+  ]
+}

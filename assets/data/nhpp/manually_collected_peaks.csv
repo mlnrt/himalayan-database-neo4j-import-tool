@@ -1,0 +1,58 @@
+﻿ID;NAME;ALTERNATE_NAMES;LAT;LON;STATUS;FIRST_ASCENT_ON;FIRST_ASCENT_BY;DESCRIPTION;PROVINCE;DISTRICT;MUNICIPALITY;RANGE;NEPALESE_FEES;FOREIGNER_FEES
+AMPM;Amphu Middle;Amphu North;27.871873;86.910537;Opened;;;Amphu Middle is a six-thousander in the Khumbu Himal in north- eastern Nepal . The 6238 m [1] high mountain is located between the Chhukhung Glacier in the west and the Amphu Labtsa Glacier in the east. Immediately to the east of the mountain is a commonly climbed pass, the 5780 m high Amphu Labtsa . It connects the Hongu and Imja valleys. Directly opposite it to the north is Island Peak , to the west is Ama Dablam , and to the east is Baruntse. The mountain has three prominent peaks, of which the middle one, to the west and north of the other two, is the highest point of the mountain at 6238 m.;Province 1;Solukhumbu;Khumbu Pasang Lhamu/Mahakulung;Mahalangur;Spring 5000, Autumn 2500, Winter/Summer 1250;Spring 400, Autumn 200, Winter/Summer 100
+ANNE;Annapurna I East;;28.61277778;83.83694444;;;;Annapurna I East is a subsidiary mountain of Annapurna I Main located in Nepal.;Gandaki Pradesh;Myagdi/Kaski;Annapurna/Annapurna;Annapurna;Spring 10000 (NRs);Spring 1800 (USD)
+ANNM;Annapurna I Middle;;28.60002778;83.83336111;;;;Annapurna I East is a subsidiary mountain of Annapurna I Main located in Nepal.;Gandaki Pradesh;Myagdi/Kaski;Annapurna/Annapurna;Annapurna;Spring 10000 (NRs);Spring 1800 (USD)
+CHKA;Chamar Kang;Chharka,Kangtega;29.23552;83.36115;;;;;Karnali Pradesh;Dolpa;;Mukut;;
+CHMR;Shringi Himal;;28.54689;84.9471;;;;;Gandaki Pradesh;Gorkha;Chum Nubri;Shringi;;
+CHRE;Churen Himal East;;28.7427;83.22859;;;;;Karnali Pradesh;Dolpa;;Dhaulagiri;Spring 6000 (NRs);Spring 500 (USD)
+CHUB;Chhuboche;;28.7516;84.2183;;;;;Gandaki Pradesh;Mustang;;Damodar;;
+CHRI;Chhukung Ri;;27.92529;86.879008;Opened;;;;Province 1;Solukhumbu;Khumbu Pasang Lhamu;Khumbu;Sp 4000 (NRs);Sp 250 (USD)
+CHUR;Churen Himal Central;;28.734995;83.217979;Opened;;;;Karnali Pradesh;Dolpa;;Dhaulagiri;Spring 6000 (NRs);Spring 500 (USD)
+CTSE;Changtse;Everest North Peak, Changtse;28.024329;86.915186;;;;"Changtse (Tibetan: ""north peak"") is a mountain situated between the Main Rongbuk and East Rongbuk Glaciers in Tibet, China, immediately north of Mount Everest. It is connected to Mount Everest via the North Col. The given elevation of 7,543 metres is from modern Chinese mapping. Some authorities give 7,583 metres. The Changtse Glacier flows north into the East Rongbuk Glacier. It is possible that the third highest lake in the world is in the Changtse Glacier at 6,216 metres (20,394 ft).";;;;Khumbu;;
+DZAS;Dzasampatse;;28.046807;86.609624;;;;;Province 1;Solukhumbu;;Mahalangur;;
+DOMO;Domo;Jongsang SE Peak;27.878674;88.138117;Opened;;;;Province 1;Taplejung/NC;Phaktanglung/NC;Janak;Spring 6000 (NRs);Spring 500 (USD)
+DOR2;Dorje Lakpa II;Jugal Himal;28.161399;85.780771;;;;;Bagmati Pradesh;Rasuwa/Sindhupalchok;;Jugal;;
+GAMA;Gama Peak;;28.716846;83.276834;;;;;Gandaki Pradesh;Myagdi;;Dhaulagiri;;
+GDNG;Gave Ding;;30.12542;82.164697;;;;The tenacious team of Paul Ramdsen and Mick Fowler, who already received a Piolet d’Or in 2002 for their ascent of Siguniang and another in 2013 for the Prow of Shiva, made the first ascent of this isolated summit on the northwest border of Nepal, which had seen no previous attempts. After studying the different ascent possibilities, the English climbers spent five days (from base camp to summit) putting up a very elegant new line on the north face. The route is protected from objective dangers. They reached the summit on 22 October and made the descent in two days by the west ridge and then a couloir on the north side. The overall difficulty of the 1,600 m route is estimated at ED+. Paul’s description of the line: “The first half is similar to the north face of the Eiger in terms of the complexity of the itinerary, the second half is similar to the Peuterey ridge.”;Karnali Pradesh;Humla/NC;Kharpunath/NC;Changla Himal;Sp 5000, Au 2500, Wi/Su 1319;Sp 400, Au 200, Wi/Su 100
+GHYM;Ghyuthumba Main;Gutumpa,Pasang Peak;;;;;;;;;;Kanjiroba;;
+GIME;Gimmigela Chuli East;Twins, Gimmigela II, Gimigela II;27.746132;88.178691;Opened;;;;Province 1;Taplejung/NI;Phaktanglung/NI;Kanchenjunga;Sp 6000, Au 3000, Wi/Su 1500;Sp 500, Au 250, Wi/Su 125
+GIMM;Gimmigela Chuli;Twins, Gimmigela I, Gimigela I;27.740102;88.158563;Opened;29/10/1994 AD(12/07/2051 BS);Shigeru Yokokuwa,Dawa Wangchuk Sherpa,Pasang Gyalzen Sherpa,Pasang Tenzing Sherpa,;;Province 1;Taplejung/NI;Phaktanglung/NI;Kanchenjunga;Sp 6000, Au 3000, Wi/Su 1500;Sp 500, Au 250, Wi/Su 125
+GOJN;Gojung;Mugu Chuli;29.8477;82.6225;;;;;Karnali Pradesh;Mugu/NC;;Kanti;;
+HUNK;Hunku;;27.813976;86.924861;;;;;Province 1;Solukhumbu;;Mahalangur;;
+JAGD;Jagdula;Jagdula Lek,Jagdulā Lek;29.301735;82.602699;;;;;Karnali Pradesh;Dolpa;Jagdulla;Kanjiroba;;
+JANE;Jannu East;Khumbhakarna East;27.68798;88.058943;;;;;Province 1;Taplejung;Phaktanglung;Kanchenjunga;;
+JUNC;Junction Peak;;28.721797;83.276998;;;;;Gandaki Pradesh;Dolpa/Myagdi;Chharka Tongsong/Dhawalagiri;Dhaulagiri;Sp 8000 (NRs);Sp 600 (USD)
+KABD;Kabru Dome;;27.577504;88.216788;;;;Located South East of Kabru in India;Gandaki Pradesh;Dolpa/Myagdi;;Dhaulagiri;;
+KABS;Kabru South;;27.60833;88.11166;;;;Located South of the Kabru Main Peak;Province 1;Taplejung;Phaktanglung;Kanchenjunga;;
+KAGA;Kanta Gaton;Kangfu Gaton;29.103333;82.995833;;;;;Karnali Pradesh;Dolpa;;Kanjiroba;;
+KAN1;Kande Hiunchuli North  I;;29.421508;82.584929;Opened;;;Just West of the main Kande Hiunchuli North peak (also called Patrasi or Sisne Himal East);Karnali Pradesh;Mugu/Dolpa;Jagdulla/Mugu Makarmarong;Patrasi;Spring 4000, Autumn 2000, Winter/Summer 1000;Spring 250, Autumn 125, Winter/Summer 70
+KAN2;Kande Hiunchuli North  II;;29.416929;82.581923;Opened;;;Just South-West of the main Kande Hiunchuli North peak (also called Patrasi or Sisne Himal East);Karnali Pradesh;Mugu/Dolpa;Jagdulla/Mugu Makarmarong;Patrasi;Spring 4000, Autumn 2000, Winter/Summer 1000;Spring 250, Autumn 125, Winter/Summer 70
+KORL;Korlang Pari Tippa;Korlang Pari Tippa North;28.173625;86.187621;;;;;Bagmati Pradesh;Dolakha/NC;;Rolwaling;;
+LAMP;Langbo Kangri;Langpo Kangri, Lampo;28.50764695;85.15499632;;;;;Gandaki Pradesh;Gorkha/NC;Dharche/NC;Ganesh;;
+LNKE;Lunchhung Kamo East;;;;;;;;;;;Kanti;;
+LUN2;Lunag II;;28.051905;86.550244;;;;;Province 1;Solukhumbu/NC;Khumbu Pasang Lhamu/NC;Mahalangur;Spring 5000, Autumn 2500, Winter/Summer 1250;Spring 400, Autumn 200, Winter/Summer 100
+LUZA;Luza;;27.888105;86.694078;;;;;Province 1;Solukhumbu;;Mahalangur;;
+MACH;Machhapuchhare;Machapuchare, Fishtail;28.498007;83.946192;Closed;;;Machapuchare, Machhapuchchhre or Machhapuchhre (meaning 'fishtail'), is a mountain in the Annapurna Himalayas of north central Nepal. It is revered by the local population as particularly sacred to the god Shiva, and hence is off limits to climbing.;Gandaki Pradesh;Kaski;;Annapurna;;
+MATA;Matathumba;Matatumpa,Ghyuthumba East;;;;;;;;;;Kanjiroba;;
+MING;Mingbo Ri;;;;;;;;;;;Khumbu;;
+MPNE;Manapathi NE;;28.650945;83.467265;Opened;;;;Gandaki Pradesh;Myagdi;Dhawalgiri/Raghuganga;Dhaulagiri;Spring 4000, Autumn 2000, Winter/Summer 1000;Spring 250, Autumn 125, Winter/Summer 70
+MYAG;Myagdi Matha;Myagumath;28.661404;83.321287;;;;;Gandaki Pradesh;Myagdi;Dhawalagiri;Dhaulagiri;;
+NALS;Nalakankar South;;30.352819;81.405957;;;;;Karnali Pradesh;Humla/NC;;Nalakankar;;
+NGOR;Nagoru;Nagoru Central;28.846886;84.301767;;;;;Gandaki Pradesh;Manang/NC;;Peri;;
+NILE;Nilgiri East;;28.68848;83.76374;Opened;;;;Gandaki Pradesh;Mustang/Myagdi;Gharpajhong/Annapurna;Nilgiri;Rs. 6000 in summer, Rs. 3000 in autumn and Rs. 1500 in winter;$500.00 in summer, $250.00 in autumn and $125.00 in winter
+NUPE;Nuptse East I;;27.9673;86.886637;Opened;;;;Province 1;Solukhumbu;Khumbu Pasang Lhamu;Mahalangur;Rs.2000 in Summer and Winter, Rs.4000 in Autumn and seasons and Rs.8000 in Spring.;$150.00 in Summer and Winter, $300.00 in Autumn and $600.00 in Spring
+OMBK;Ombak Himal;;;;;;;;;;;Janak;;
+OMRC;Omoga Ri Chang;;;;;;;;;;;Khumbu;;
+PAWR;Pawar Central;Chaar Baatsa;28.696042;84.508769;;;;;Gandaki Pradesh;Manang/Gorkha;Nashong/Chum;Manaslu;;
+PHNH;Phungi Himal;;28.5541;84.483065;;;;;Gandaki Pradesh;Manang;Nashong/Chum;Manaslu;;
+PHUG;Phu Kang Go;Phu Khang Go,Athahra Saya Khola Himal;28.734702;84.49172;;;;;Gandaki Pradesh;Manang/NC;Nashong/NC;Peri;;
+PLNG;Palung;Palung Ri;28.129182;86.644638;;;;Located in Tibet North-West of Cho Oyu;;Gorkha;;Khumbu;;
+POIN;Pointed Peak;;;;;;;;;;;Khumbu;;
+RANI;Rani Peak;Lidanda Peak,Himalchuli Northeast;28.46624;84.6896;;;;;Gandaki Pradesh;Gorkha;;Manaslu;;
+ROMA;Roma;Mt. Roma;29.804326;81.347198;Opened;;;;Sudhurpashchim Pradesh;Bajhang;;Saipal;;
+SNOW;Snow Peak;;;;;;;;;;;Dhaulagiri;;
+SRKU;Serku Dolma;Serku Dholmā;29.338006;82.762538;;;;;Karnali Pradesh;Dolpa;;Kanjiroba;;
+TAWA;Tawa;Tawa Himal;28.835364;83.95719;;;;;Gandaki Pradesh;Mustang/Manang;;Damodar;;
+THAR;Tharpu Chuli;Tharpu Chull;28.561666;83.889245;Opened;;;;Gandaki Pradesh;Kaski;Annapurna;Annapurna;;
+TONG;Tongu;;;;;;;;;;;Mukut;;
+TRIA;Triangle Peak;;28.272326;85.739483;;;;;Bagmati Pradesh;Rasuwa/NC;Gosai Kunda/NC;Langtang;;
