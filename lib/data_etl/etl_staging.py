@@ -42,7 +42,6 @@ class HimalayanDatabaseEtl:
         self.target_dir = STAGED_DATA_DIR
         self.source_file = self.source_dir / file_name
         self.target_file = self.target_dir / f'{file_name.split(".")[0]}.csv'
-        #self.dtype = np.dtype([(c, locate(t)) for c, t in dtype.items()])
         # Load the data into a dataframe from the DBF file
         dbf = DBF(self.source_file)
         self.df = pd.DataFrame(iter(dbf))
