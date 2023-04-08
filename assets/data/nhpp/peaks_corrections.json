@@ -3,12 +3,12 @@
   "PEAKVISOR_NOT_TO_IMPORT": ["CHMR"],
   "HD_PEAK_CORRECTIONS": [
     {
-      "PEAKID": "LAMP",
-      "PKNAME2": "Langbo Kangri, Langpo Kangri"
-    },
-    {
       "PEAKID": "DROM",
       "PKNAME2": "Longridge Peak"
+    },
+    {
+      "PEAKID": "LAMP",
+      "PKNAME2": "Langbo Kangri, Langpo Kangri"
     }
   ],
   "NHPP_PEAKS_CORRECTIONS": [
@@ -24,6 +24,10 @@
     {
       "NHPP_ID": "ASJW",
       "DISTRICT": "Humla/NC"
+    },
+    {
+      "NHPP_ID": "BIJO",
+      "RANGE": "Jagdula Lekh"
     },
     {
       "NHPP_ID": "CHUE",
@@ -85,6 +89,10 @@
       "RANGE": "Kanchenjunga"
     },
     {
+      "NHPP_ID": "DUDH",
+      "RANGE": "Jagdula Lekh"
+    },
+    {
       "NHPP_ID": "GAN4",
       "LAT": "28.345024",
       "LON": "85.079139"
@@ -134,7 +142,8 @@
     {
       "NHPP_ID": "KASI",
       "LAT": "29.283037",
-      "LON": "82.552581"
+      "LON": "82.552581",
+      "RANGE": "Jagdula Lekh"
     },
     {
       "NHPP_ID": "KESH",
