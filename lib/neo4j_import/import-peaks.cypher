@@ -10,7 +10,6 @@ SET peak.name = row.PKNAME,
     peak.opened = row.OPEN,
     peak.unlisted = row.UNLISTED,
     peak.trekking = row.TREKKING,
-    peak.hostCountries = row.PHOST_DESC,
     peak.hasBeenClimbed = CASE WHEN row.PCLIMBED = "" THEN null ELSE toBoolean(row.PCLIMBED) END,
     peak.trekkingYearAddition = CASE WHEN row.TREKYEAR = "" THEN null ELSE toInteger(row.TREKYEAR) END,
     peak.description = CASE WHEN row.DESCRIPTION = "" THEN null ELSE row.DESCRIPTION END,
@@ -37,6 +36,9 @@ FOREACH(ignoreMe IN CASE WHEN NOT row.PROVINCE = "" THEN [1] ELSE [] END |
                 // If the district is NC or NI, we don't create a node for it
                 FOREACH(ignoreMe IN CASE WHEN (NOT district = "NC") AND (NOT district = "NI") THEN [1] ELSE [] END |
                     MERGE (d:District {name: trim(district)})
+                    // Create a relationship between the Peak and Nepal Country
+                    MERGE (c:Country {name: "Nepal"})
+                    MERGE (peak)-[:IN_COUNTRY]->(c)
                     // Peaks can be at the border of two districts which is also the border of two provinces
                     // unfortunately in this case only one province is given, so in this case we do not create a
                     // relationship between the district and the province because it can create a wrong relationship
@@ -53,8 +55,16 @@ FOREACH(ignoreMe IN CASE WHEN NOT row.PROVINCE = "" THEN [1] ELSE [] END |
                     FOREACH(ignoreMe IN CASE WHEN row.DISTRICT = "Rukum East/Rukum" AND district = "Rukum East" THEN [1] ELSE [] END |
                         // Create the Peak->IN_DISTRICT->District->IN_PROVINCE->Province relationships
                         MERGE (d)-[:IN_PROVINCE]->(province)
-                        MERGE (peak)-[:IN_DISTRICT]->(d))
-                )))))
+                        MERGE (peak)-[:IN_DISTRICT]->(d)))
+                // Create the Peak relationship with the China country
+                FOREACH(ignoreMe IN CASE WHEN (district = "NC")THEN [1] ELSE [] END |
+                    MERGE (c:Country {name: "China"})
+                    MERGE (peak)-[:IN_COUNTRY]->(c))
+                // Create the Peak relationship with the India country
+                FOREACH(ignoreMe IN CASE WHEN (district = "NI")THEN [1] ELSE [] END |
+                    MERGE (c:Country {name: "India"})
+                    MERGE (peak)-[:IN_COUNTRY]->(c))
+                ))))
 
 // Create the Range, the peak is in
 FOREACH(ignoreMe IN CASE WHEN NOT row.RANGE = "" THEN [1] ELSE [] END |

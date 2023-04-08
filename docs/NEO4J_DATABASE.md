@@ -347,10 +347,13 @@ The following columns from the Himalayan Database tables have not been imported 
   * `MSMTNOTE3` - Summit notes for the third ascent.
   * `DEATHRTE` - The route number in use by the deceased climber.
 * From the `peaks` table:
+  * `LOCATION` - This information is represented by the relationship to `Range` nodes and the data now include 
+  `latitude` and `longitude` attributes gathered from the Nepal Himal Peak Profile website. 
   * `HIMAL` - We do not import this column but instead use the `RANGE` column collected from the Nepal Himalaya Peak
     Profile website.
   * `REGION` - We do not import this column but instead use the `DISTRICT` and `PROVINCE` columns collected from the
     Nepal Himalaya Peak Profile website.
+  * `PHOST` - This information is represented by the relationship to `Country` nodes.
   * `PYEAR` - The year of the peak first ascent. This information can be found querying the database.
   * `PSEASON` - The season of the peak first ascent. This information can be found querying the database.
   * `PEXPID` - The expedition id of the peak first ascent. This information can be found querying the database.
