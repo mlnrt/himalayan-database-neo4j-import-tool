@@ -330,14 +330,6 @@ class PeaksEtl(HimalayanDatabaseEtl):
             peak_exped_smtdate = expeditions_df[expeditions_df['EXPID'] == peak_exped_id]['SMTDATE'].values[0]
             self.df.loc[self.df['PEAKID'] == peak, 'PSMTDATE'] = peak_exped_smtdate
 
-    def _peak_descriptions(self):
-        """
-        Add descriptions to coded labels in dataframe
-        """
-        descrips = GetDescriptions()
-        host_dict = descrips.return_dict('PHOST_DESC')
-        self.df['PHOST_DESC'] = self.df['PHOST'].apply(lambda x: host_dict[x])
-
     def _set_climbed_status_to_boolean(self):
         """
         Replace the status column values with boolean values
@@ -357,7 +349,6 @@ class PeaksEtl(HimalayanDatabaseEtl):
         self._fix_peaks_dates(expeditions_df)
         self._replace_none_values(['PEAKMEMO', 'REFERMEMO', 'PHOTOMEMO'])
         self._set_climbed_status_to_boolean()
-        self._peak_descriptions()
 
 
 if __name__ == '__main__':

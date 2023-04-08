@@ -1,13 +1,4 @@
 {
-    "PHOST_DESC":{
-        "0":"Unclassified",
-        "1":"Nepal only", 
-        "2":"China only", 
-        "3":"India only", 
-        "4":"Nepal & China",
-        "5":"Nepal & India",
-        "6":"Nepal, China & India"
-    },
     "SEAS_DESC":{
         "0":"Uknown",
         "1":"Spring",
