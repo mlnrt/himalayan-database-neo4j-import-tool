@@ -1,5 +1,8 @@
 # Himalayan Database Import Toll Into Neo4j Graph Database
 This is a tool to import the data from the Himalayan Database into a Neo4j graph database.
+
+![](docs/neo4j-import-tool-header.jpg)
+
 ## Getting Started
 This repository uses [Poetry](https://python-poetry.org)to manage the Python dependencies and ensure that the correct 
 versions are used. There are two ways to create a Python environment with the correct dependencies: 
@@ -47,3 +50,7 @@ poetry env use D:\Python\Python310\python.exe
 ```
 poetry install
 ```
+## How to use the tool?
+## To Dos
+- [ ] Add pytest tests for the Nepal Himal Peak Profile website scraper script
+- [ ] Add pytest tests for the data processing scripts
