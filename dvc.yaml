@@ -1,0 +1,42 @@
+stages:
+  nepal-peaks-preprocessing:
+    cmd: python lib/data_collection/nhpp_preprocessing.py
+    deps:
+    - assets/data/hdb/peaks.dbf
+    - assets/data/nhpp/manually_collected_peaks.csv
+    - assets/data/nhpp/nhpp_peaks.csv
+    - assets/data/nhpp/peaks_corrections.json
+    - assets/data/nhpp/peakvisor_peaks.csv
+    - lib/data_collection/nhpp_preprocessing.py
+    outs:
+    - assets/data/nhpp/preprocessed_nhpp_peaks.csv
+  etl-staging:
+    cmd: python lib/data_etl/etl_staging.py
+    deps:
+    - assets/data/hdb/exped.dbf
+    - assets/data/hdb/members.dbf
+    - assets/data/hdb/peaks.dbf
+    - lib/data_etl/etl_staging.py
+    outs:
+    - assets/data/staged/exped.csv
+    - assets/data/staged/members.csv
+    - assets/data/staged/peaks.csv
+  merge-processing:
+    cmd: python lib/data_etl/merge_processing.py
+    deps:
+    - assets/data/nhpp/preprocessed_nhpp_peaks.csv
+    - assets/data/staged/exped.csv
+    - assets/data/staged/members.csv
+    - assets/data/staged/peaks.csv
+    - lib/data_etl/merge_processing.py
+    outs:
+    - assets/data/processed/exped.csv
+    - assets/data/processed/members.csv
+    - assets/data/processed/peaks.csv
+  neo4j-import:
+    cmd: python lib/neo4j_import/neo4j_import.py
+    deps:
+    - assets/data/processed/exped.csv
+    - assets/data/processed/members.csv
+    - assets/data/processed/peaks.csv
+    - lib/neo4j_import/neo4j_import.py

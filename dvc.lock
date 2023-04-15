@@ -1,0 +1,95 @@
+schema: '2.0'
+stages:
+  nepal-peaks-preprocessing:
+    cmd: python lib/data_collection/nhpp_preprocessing.py
+    deps:
+    - path: assets/data/hdb/peaks.dbf
+      md5: a775cabb741b3cbaed0e90d37f4287ee
+      size: 366330
+    - path: assets/data/nhpp/manually_collected_peaks.csv
+      md5: 41c9f9109986dc647022b9cab578cf48
+      size: 9365
+    - path: assets/data/nhpp/nhpp_peaks.csv
+      md5: 5b4adda5e8767fc093ef4181fff46754
+      size: 183454
+    - path: assets/data/nhpp/peaks_corrections.json
+      md5: bacfd78bf8640b60a9c905069a11f7ae
+      size: 5368
+    - path: assets/data/nhpp/peakvisor_peaks.csv
+      md5: a8c04a73b2667675974996b6dc029453
+      size: 11356
+    - path: lib/data_collection/nhpp_preprocessing.py
+      md5: 24c91c727025cc0ba3aa650f99b76386
+      size: 5599
+    outs:
+    - path: assets/data/nhpp/preprocessed_nhpp_peaks.csv
+      md5: b447b441e3f3ba1e59e61b756b1dfa71
+      size: 206753
+  etl-staging:
+    cmd: python lib/data_etl/etl_staging.py
+    deps:
+    - path: assets/data/hdb/exped.dbf
+      md5: 85bb1b46b3d1f1a2787aea1d357d3086
+      size: 22387874
+    - path: assets/data/hdb/members.dbf
+      md5: 91e97a7b1ccf7a4bc7d83bcd62245f42
+      size: 62967009
+    - path: assets/data/hdb/peaks.dbf
+      md5: a775cabb741b3cbaed0e90d37f4287ee
+      size: 366330
+    - path: lib/data_etl/etl_staging.py
+      md5: 56fda5b6666166a0dacd4d8db96db5e7
+      size: 19937
+    outs:
+    - path: assets/data/staged/exped.csv
+      md5: 6db57909aeebe5eaa96e91e1b3d9d0f7
+      size: 18953183
+    - path: assets/data/staged/members.csv
+      md5: 82363741b2e44e7e78b89763eae0ee54
+      size: 36295324
+    - path: assets/data/staged/peaks.csv
+      md5: e98372cc68d1c474020f83a4a5cba031
+      size: 166111
+  merge-processing:
+    cmd: python lib/data_etl/merge_processing.py
+    deps:
+    - path: assets/data/nhpp/preprocessed_nhpp_peaks.csv
+      md5: b447b441e3f3ba1e59e61b756b1dfa71
+      size: 206753
+    - path: assets/data/staged/exped.csv
+      md5: 6db57909aeebe5eaa96e91e1b3d9d0f7
+      size: 18953183
+    - path: assets/data/staged/members.csv
+      md5: 82363741b2e44e7e78b89763eae0ee54
+      size: 36295324
+    - path: assets/data/staged/peaks.csv
+      md5: e98372cc68d1c474020f83a4a5cba031
+      size: 166111
+    - path: lib/data_etl/merge_processing.py
+      md5: dd4408bb592c366d49ca536ae13ad855
+      size: 3878
+    outs:
+    - path: assets/data/processed/exped.csv
+      md5: 6db57909aeebe5eaa96e91e1b3d9d0f7
+      size: 18953183
+    - path: assets/data/processed/members.csv
+      md5: 82363741b2e44e7e78b89763eae0ee54
+      size: 36295324
+    - path: assets/data/processed/peaks.csv
+      md5: 917a638ce8046de52d4469081f6eee5d
+      size: 347475
+  neo4j-import:
+    cmd: python lib/neo4j_import/neo4j_import.py
+    deps:
+    - path: assets/data/processed/exped.csv
+      md5: 6db57909aeebe5eaa96e91e1b3d9d0f7
+      size: 18953183
+    - path: assets/data/processed/members.csv
+      md5: 82363741b2e44e7e78b89763eae0ee54
+      size: 36295324
+    - path: assets/data/processed/peaks.csv
+      md5: 917a638ce8046de52d4469081f6eee5d
+      size: 347475
+    - path: lib/neo4j_import/neo4j_import.py
+      md5: 8a18692594f9e498f8cefa26ae5823d1
+      size: 16395
