@@ -1,6 +1,9 @@
 # Himalayan Database Neo4j Graph Database Import Tool
 This is a tool to import the data from the [Himalayan Database](https://www.himalayandatabase.com/) into a Neo4j 
-graph database.
+graph database. This tool is originating from the Capstone project by Simi Talkar, Brian Seko and myself as part of our
+study in the [Master of Applied Data Science](https://www.si.umich.edu/programs/master-applied-data-science) at the 
+University of Michigan School of Information. The results of this project are published 
+[here](http://umsi-mads-capstone-himalayas.s3-website-eu-west-1.amazonaws.com/index.html).
 
 ![](docs/neo4j-import-tool-header.jpg)
 
