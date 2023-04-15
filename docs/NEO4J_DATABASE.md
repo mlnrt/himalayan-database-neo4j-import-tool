@@ -15,12 +15,12 @@ _[Peakvisor](https://peakvisor.com/panorama.html)_ and some manually collected m
 ## Database Schema
 The Neo4j database overall schema is defined as below:
 
-![](https://dagshub.com/sjtalkar/capstone_himalayas/raw/main/docs/neo4j/neo4j_simplified_schema.jpg)
+![](./neo4j_simplified_schema.jpg)
 
 Showing all node labels as different nodes but using the same color that they are different labels of the same node,
 we get:
 
-![](https://dagshub.com/sjtalkar/capstone_himalayas/raw/main/docs/neo4j/neo4j_full_schema.jpg)
+![](./neo4j_full_schema.jpg)
 
 In this database we are using the Neo4j guidelines for naming:
 * Node labels use CamelCase (e.g. `Expedition`)
@@ -223,7 +223,7 @@ Taking an example of two expeditions with 4 members each (*A*, *B*, *C* and *D*)
 *E* and *F*) in the second expedition, the `PARTNERED_WITH` relationships will between nodes *A* and *B* will have an
 `expeditionCount` of 2. The `PARTNERED_WITH` relationships between all other nodes will have an `expeditionCount` of 1.
 
-![](https://dagshub.com/sjtalkar/capstone_himalayas/raw/main/docs/neo4j/neo4j_members_expedition_relations.jpg)
+![](./neo4j_members_expedition_relations.jpg)
 ## Dealing with Non-Unique Sherpas
 A difficulty with the Himalayan Database is to uniquely identify people, especially Sherpas. Using firstnames, 
 lastnames, gender and year of birth is unfortunately not enough to uniquely identify Sherpas, since the probability to
