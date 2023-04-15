@@ -10,7 +10,8 @@ University of Michigan School of Information. The results of this project are pu
 ## The Data
 The data from the Himalayan Database are enhanced with data coming from the 
 [Nepal Himal Peak Profile](https://nepalhimalpeakprofile.org/) website. This enhances the peaks data with information
-like latitude and longitude of the peaks, permit fees, administrative districts and regions, etc.
+like latitude and longitude of the peaks, permit fees, administrative districts and regions, etc. A DVC pipeline is
+provided to pre-process, merge all the data together and import them into Neo4j.
 
 For the description of the full graph data model, please refer to the dedicated documentation [here](docs/NEO4J_DATABASE.md)
 ## Tools Used in This Project
