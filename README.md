@@ -122,7 +122,11 @@ environment:
 ```
 python lib/data_collection/nhpp_collection.py
 ```
-#### Running the Pipeline
+#### Importing the Himalayan Database into Neo4j by Running the Pipeline
+__IMPORTANT:__ When run, the `neo4j-import` stage of the DVC pipeline destroys any existing himalayan graph database
+as configured in the `.env`files (see instructions [here](docs/NEOJ_SETUP.md)) and recreates a new one with the new 
+data.
+
 With your Python environment activated, The Himalayan Database files extracted in the `assets\data\hdb` folder, the
 Neo4j Desktop installed, configured and the DBMS running, run the DVC pipeline using the following command:
 ```
