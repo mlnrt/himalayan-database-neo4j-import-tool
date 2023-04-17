@@ -330,17 +330,6 @@ class PeaksEtl(HimalayanDatabaseEtl):
             peak_exped_smtdate = expeditions_df[expeditions_df['EXPID'] == peak_exped_id]['SMTDATE'].values[0]
             self.df.loc[self.df['PEAKID'] == peak, 'PSMTDATE'] = peak_exped_smtdate
 
-    def _set_climbed_status_to_boolean(self):
-        """
-        Replace the status column values with boolean values
-        """
-        status_dict = {
-            0: None,
-            1: False,
-            2: True
-        }
-        self.df['PCLIMBED'] = self.df['PSTATUS'].apply(lambda x: status_dict[x])
-
     def process(self, expeditions_df: pd.DataFrame):
         """
         Process the peaks data
@@ -348,7 +337,6 @@ class PeaksEtl(HimalayanDatabaseEtl):
         """
         self._fix_peaks_dates(expeditions_df)
         self._replace_none_values(['PEAKMEMO', 'REFERMEMO', 'PHOTOMEMO'])
-        self._set_climbed_status_to_boolean()
 
 
 if __name__ == '__main__':
