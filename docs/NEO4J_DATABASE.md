@@ -26,6 +26,8 @@ In this database we are using the Neo4j guidelines for naming:
 * Node labels use CamelCase (e.g. `Expedition`)
 * Relationships use uppercase with underscores (e.g. `HIRED`, `ON_PEAK`)
 * Nodes and Relationship properties use camelCase (e.g. `expeditionId`)
+
+For the full list of nodes and relationship properties, please [read this documentation](./SCHEMA.md).
 ## Graph Model Design Considerations
 ### Nodes vs Node Properties
 There can be two ways of representing in a Graph database an information like the country of the expedition members:
@@ -315,6 +317,7 @@ All members with no last name or `Unknown` lastname and no firstname or a number
 If within an expedition there are two Sherpas in the Himalayan Database which we identified with the same ID (they have 
 the same firstname, lastname, gender, year of birth and address), only the first one is kept.
 ### Fields Discarded from the Himalayan Database
+For the full list of nodes and relationship properties, please [read this documentation](./SCHEMA.md).
 The following columns from the Himalayan Database tables have not been imported into the Neo4j database:
 * The entire `reference` table
 * From the `expeditions` table:

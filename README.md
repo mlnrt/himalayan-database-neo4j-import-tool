@@ -13,7 +13,9 @@ The data from the Himalayan Database are enhanced with data coming from the
 like latitude and longitude of the peaks, permit fees, administrative districts and regions, etc. A DVC pipeline is
 provided to pre-process, merge all the data together and import them into Neo4j.
 
-For the description of the full graph data model, please refer to the dedicated documentation [here](docs/NEO4J_DATABASE.md)
+For the description of the full graph data model, please [refer to this documentation](docs/NEO4J_DATABASE.md)
+
+For the full list of nodes and relationship properties, please [refer to this documentation](./SCHEMA.md).
 ## Tools Used in This Project
 This project uses the following tools:
 1. Anaconda to manage Python environment (Poetry can be used for that as described below)
@@ -86,7 +88,7 @@ Please follow the detailed instruction in [this README file](docs/NEOJ_SETUP.md)
 Please follow the [DVC installation instructions](https://dvc.org/doc/install/windows) to install DVC by yourself.
 #### The DVC Pipeline DAG
 The DVC Pipeline DAG performs the following actions:
-1. pre-processes the peaks data coming from the  Nepal Himal Peak Profile website
+1. pre-processes the peaks data coming from the Nepal Himal Peak Profile website
 2. pre-process the peaks, members and expeditions data coming from the Himalayan Database
 3. merges the data from the two sources
 4. imports the data into Neo4j
@@ -136,3 +138,4 @@ dvc repro
 ## TO DOs
 - [ ] Add pytest tests for the Nepal Himal Peak Profile website scraper script
 - [ ] Add pytest tests for the data processing scripts
+- [] Improve the import Cypher queries
