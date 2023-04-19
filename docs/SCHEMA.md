@@ -77,14 +77,14 @@ of the expedition.
 - `nbHiredPersonnelSummit`: the number of hired personnel who reached the summit.
 - `nbHiredPersonnelDeaths`: the number of hired personnel who died during the expedition.
 - `noHiredPersonnelAboveBasecamp`: whether there was no hired personel above base camp.
-- `o2Used`: oxygen was used by at least one member of the expedition.
-- `o2None`: oxygen was not used by any members of the expedition.
-- `o2Climb`: oxygen was used for climbing by at least one member of the expedition.
-- `o2Descent`: oxygen was not used for climbing, but was used only in descent on part of the route by at least one 
-member of the expedition.
-- `o2Sleep`: oxygen was used for sleeping by at least one member of the expedition.
-- `o2Medical`: oxygen was used for medical purposes by at least one member of the expedition.
-- `o2Taken`: oxygen was brought for emergency use, but was not used by any members of the expedition.
+- `o2Used`: whether oxygen was used by at least one member of the expedition.
+- `o2None`: whether oxygen was not used by any members of the expedition.
+- `o2Climb`: whether oxygen was used for climbing by at least one member of the expedition.
+- `o2Descent`: whether oxygen was not used for climbing, but was used only in descent on part of the route by at least 
+one member of the expedition.
+- `o2Sleep`: whether oxygen was used for sleeping by at least one member of the expedition.
+- `o2Medical`: whether oxygen was used for medical purposes by at least one member of the expedition.
+- `o2Taken`: whether oxygen was brought for emergency use, but was not used by any members of the expedition.
 - `o2Unknown`: the use of oxygen is unknown for this expedition.
 - `sponsor`: the sponsor of the expedition.
 - `approach`: the approach used by the expedition. 
@@ -141,20 +141,20 @@ a property of the relationship.
 - `disabled`: whether the member is physically disabled.
 - `summitSuccess`: whether the member reached the summit.
 - `successClaimed`: whether the member’s claim of success has been disproved or is not generally recognized by the 
-mountaineering community
+mountaineering community.
 - `successDisputed`: whether the member’s claim of success is either unverified or has been disputed by another party,
 but the evidence is insufficient to not recognize the ascent.
 - `solo`: whether the member climbed the peak solo.
 - `traverse`: whether the member traversed peaks.
-- `ski`: the member used skis or a snowboard during part of the descent of the peak
-- `parapente`: the member used a parapente or hang glider during part of the descent of the peak
-- `o2Used`: oxygen was used by the member during the expedition.
-- `o2None`: oxygen was not used by the member during the expedition.
-- `o2Climb`: oxygen was used for climbing by the member during the expedition.
-- `o2Descent`: oxygen was not used for climbing, but was used only in descent on part of the route by the member during 
-the expedition.
-- `o2Sleep`: oxygen was used for sleeping by the member during the expedition.
-- `o2Medical`: oxygen was used for medical purposes by the member during the expedition.
+- `ski`: whether the member used skis or a snowboard during part of the descent of the peak.
+- `parapente`: the member used a parapente or hang glider during part of the descent of the peak.
+- `o2Used`: whether oxygen was used by the member during the expedition.
+- `o2None`: whether oxygen was not used by the member during the expedition.
+- `o2Climb`: whether oxygen was used for climbing by the member during the expedition.
+- `o2Descent`: whether oxygen was not used for climbing, but was used only in descent on part of the route by the member 
+during the expedition.
+- `o2Sleep`: whether oxygen was used for sleeping by the member during the expedition.
+- `o2Medical`: whether oxygen was used for medical purposes by the member during the expedition.
 - `death`: whether the member died during the expedition.
 - `deathType`: the type of death of the member during the expedition.
 - `deathClass`: the class of death of the member during the expedition.
@@ -164,7 +164,7 @@ the expedition.
 - `injuryType`: the type of injury of the member during the expedition.
 - `summitBid`: summit bid.
 - `summitBidTerminationReason`: summit bid termination reason.
-- `ageDuringExpedition`: the age of the member during the expedition
+- `ageDuringExpedition`: the age of the member during the expedition.
 - `speedAscent`: whether the member attempted a speed ascent.
 - `expeditionHighPointReached`: whether the member reached the expedition’s high point during the expedition.
 - `personalHightPointReached`: personal high point reached by the member during the expedition.
