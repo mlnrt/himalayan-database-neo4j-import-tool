@@ -14,6 +14,7 @@ Also note that columns in the Himalayan Database represented by codes, e.g. `DEA
 * 1 – AMS (acute mtn sickness)
 * 2 - Exhaustion
 * etc.
+
 have been replaced by their full text value (e.g. `DEATHTYPE` value `0` has been replaced with `Unspecified`).
 ## Nodes
 All nodes are created with a `name` property which can be used in graph display to identify the nodes.
