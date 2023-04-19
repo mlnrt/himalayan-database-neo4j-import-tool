@@ -8,6 +8,13 @@ Read the [detailed documentation about the graph model here](./NEO4J_DATABASE.md
 Unless stated otherwise, all nodes and relationships' properties are coming from the Himalayan Database. and their
 definition below is copied from the [Himalayan Database Program Guide for Windows Himal 2.5](https://www.himalayandatabase.com/downloads.html)
 documentation.
+
+Also note that columns in the Himalayan Database represented by codes, e.g. `DEATHTYPE` with values like
+* 0 – Unspecified
+* 1 – AMS (acute mtn sickness)
+* 2 - Exhaustion
+* etc.
+have been replaced by their full text value (e.g. `DEATHTYPE` value `0` has been replaced with `Unspecified`).
 ## Nodes
 All nodes are created with a `name` property which can be used in graph display to identify the nodes.
 ### Range
@@ -109,6 +116,10 @@ are given an extra `CommercialExpedition` label and non-commercial expedition an
 
 As explained in the [detailed documentation about the graph model here](./NEO4J_DATABASE.md), Sherpas are given an
 extra `Sherpa` label, Tibetans an extra `Tibetan` label, and others a `NonSherpaNonTibetan` label.
+
+Also, many of the columns in the `member` table in the Himalayan Database represent properties specific to the member in 
+a specific expedition. These properties are thus represented as properties of the relationship between the
+`Member` and `Expedition` nodes.
 ## Relationships
 Are listed below only relationships that have properties or are not self-explanatory.
 ### CLIMBED and ATTEMPTED
@@ -133,8 +144,8 @@ a property of the relationship.
 mountaineering community
 - `successDisputed`: whether the member’s claim of success is either unverified or has been disputed by another party,
 but the evidence is insufficient to not recognize the ascent.
-- `solo`:
-- `traverse`:
+- `solo`: whether the member climbed the peak solo.
+- `traverse`: whether the member traversed peaks.
 - `ski`: the member used skis or a snowboard during part of the descent of the peak
 - `parapente`: the member used a parapente or hang glider during part of the descent of the peak
 - `o2Used`: oxygen was used by the member during the expedition.
@@ -151,29 +162,21 @@ the expedition.
 - `deathWeatherRelated`: whether the death was related to weather.
 - `injury`: whether the member was injured during the expedition.
 - `injuryType`: the type of injury of the member during the expedition.
-- `summitBid`:
-- `summitBidTerminationReason`:
-- `ageDuringExpedition`:
-- `speedAscent`:
+- `summitBid`: summit bid.
+- `summitBidTerminationReason`: summit bid termination reason.
+- `ageDuringExpedition`: the age of the member during the expedition
+- `speedAscent`: whether the member attempted a speed ascent.
 - `expeditionHighPointReached`: whether the member reached the expedition’s high point during the expedition.
-- `personalHightPointReached`: personal hight point reached by the member during the expedition.
+- `personalHightPointReached`: personal high point reached by the member during the expedition.
 - `summitDate`: the date of the expedition reached the summit.
 - `summitTime`: the time of the expedition reached the summit. 
-- `o2UsageNote`:
+- `o2UsageNote`: notes about the oxygen usage of the member during the expedition.
 - `deathDate`: the date of the member’s death during the expedition.
 - `deathTime`: the time of the member’s death during the expedition.
 - `deathHeight`: the height at which the member died during the expedition.
-- `deathNote`:
-- `necrology`:
+- `deathNote`: notes about the member’s death during the expedition.
+- `necrology`: the necrology of the member during the expedition.
 - `injuryDate`: the date of the member’s injury during the expedition.
 - `injuryTime`: the time of the member’s injury during the expedition.
 - `injuryHeight`: the height at which the member was injured during the expedition.
-- `memo`:
-- ``:
-- ``:
-- ``:
-- ``:
-- ``:
-- ``:
-- ``:
-- ``:
+- `memo`: additional notes.

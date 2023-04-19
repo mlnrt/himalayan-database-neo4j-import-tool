@@ -15,7 +15,7 @@ provided to pre-process, merge all the data together and import them into Neo4j.
 
 For the description of the full graph data model, please [refer to this documentation](docs/NEO4J_DATABASE.md)
 
-For the full list of nodes and relationship properties, please [refer to this documentation](./SCHEMA.md).
+For the full list of nodes and relationship properties, please [refer to this documentation](docs/SCHEMA.md).
 ## Tools Used in This Project
 This project uses the following tools:
 1. Anaconda to manage Python environment (Poetry can be used for that as described below)
@@ -25,7 +25,7 @@ This project uses the following tools:
 
 Note you must install both DVC and the Neo4j Desktop manually. DVC is not installed using Poetry in the environment due 
 to errors when trying to do so. Please follow the [DVC installation instructions](https://dvc.org/doc/install/windows) 
-to install it. Follow [the provided instructions](docs/NEOJ_SETUP.md) to install anc configure Neo4j Desktop.
+to install it. Follow [the provided instructions](docs/NEOJ_SETUP.md) to install and configure Neo4j Desktop.
 ## Getting Started
 ### 1. Clone the Repository and Download the Data
 1. Clone the repository.
@@ -38,14 +38,15 @@ Note that you do not need to install the Himalayan Database, just to download th
 ### 2. Create the Python Environment
 This repository uses [Poetry](https://python-poetry.org) to manage the Python dependencies and ensure that the correct 
 versions are used. There are two ways to create a Python environment with the correct dependencies: 
-* Using Anaconda to manage the Python environment and Poetry to manage the dependencies.
-* Using Poetry for both the environment and the dependencies.
+1. Using Anaconda to manage the Python environment and Poetry to manage the dependencies. (recommended)
+2. Using Poetry for both the environment and the dependencies.
 
-Once you have cloned the repository follow one of the two following methods to create the Python environment and
+Once you have cloned the repository follow one of the two methods below to create the Python environment and
 install the dependencies.
 #### Using Anaconda and Poetry
 In your command line, from the repository folder follow the steps below:
-1. Create a new Anaconda environment with the following command (this will install Poetry within the environment):
+1. Create a new `hdb-neo4j-import` Anaconda environment with the following command (this will install Poetry within 
+the environment):
 ```
 conda create --name hdb-neo4j-import --file assets/conda/conda-win-64.lock
 ```
@@ -85,7 +86,7 @@ poetry install
 ### 3. Install and Configure Neo4j Desktop
 Please follow the detailed instruction in [this README file](docs/NEOJ_SETUP.md)
 ### 4. Run the DVC Pipeline
-Please follow the [DVC installation instructions](https://dvc.org/doc/install/windows) to install DVC by yourself.
+Please first follow the [DVC installation instructions](https://dvc.org/doc/install/windows) to install DVC by yourself.
 #### The DVC Pipeline DAG
 The DVC Pipeline DAG performs the following actions:
 1. pre-processes the peaks data coming from the Nepal Himal Peak Profile website
@@ -124,7 +125,7 @@ environment:
 ```
 python lib/data_collection/nhpp_collection.py
 ```
-#### Importing the Himalayan Database into Neo4j by Running the Pipeline
+#### Processing the Data and Importing the Himalayan Database into Neo4j by Running the Pipeline
 __IMPORTANT:__ When run, the `neo4j-import` stage of the DVC pipeline destroys any existing himalayan graph database
 as configured in the `.env`files (see instructions [here](docs/NEOJ_SETUP.md)) and recreates a new one with the new 
 data.
@@ -134,7 +135,6 @@ Neo4j Desktop installed, configured and the DBMS running, run the DVC pipeline u
 ```
 dvc repro
 ```
-## How to use the tool?
 ## TO DOs
 - [ ] Add pytest tests for the Nepal Himal Peak Profile website scraper script
 - [ ] Add pytest tests for the data processing scripts
