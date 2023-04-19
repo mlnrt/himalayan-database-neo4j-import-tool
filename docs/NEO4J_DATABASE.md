@@ -1,4 +1,4 @@
-# Neo4j Database
+# Neo4j Database Graph Model
 ## Creation and Import
 The Python script `lib\neo4j_import\neo4j_import.py` is used to create the Neo4j database and import the data. 
 
