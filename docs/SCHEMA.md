@@ -89,8 +89,8 @@ one member of the expedition.
 - `sponsor`: the sponsor of the expedition.
 - `approach`: the approach used by the expedition. 
 - `basecampDate`: the date of the expedition arrived at base camp.
-- `summitDate`: the date of the expedition reached the summit.
-- `summitTime`: the time of the expedition reached the summit. 
+- `summitDate`: the date the expedition reached the summit.
+- `summitTime`: the time the expedition reached the summit. 
 - `terminationDate`: the date of the expedition’s termination.
 - `terminationNote`: the primary reason that the expedition was terminated. Refer to the Himalayan Database Program
  Guide for Windows Himal 2.5 for the list of possible values.
@@ -168,8 +168,8 @@ during the expedition.
 - `speedAscent`: whether the member attempted a speed ascent.
 - `expeditionHighPointReached`: whether the member reached the expedition’s high point during the expedition.
 - `personalHightPointReached`: personal high point reached by the member during the expedition.
-- `summitDate`: the date of the expedition reached the summit.
-- `summitTime`: the time of the expedition reached the summit. 
+- `summitDate`: the date the member reached the summit.
+- `summitTime`: the time the member reached the summit. 
 - `o2UsageNote`: notes about the oxygen usage of the member during the expedition.
 - `deathDate`: the date of the member’s death during the expedition.
 - `deathTime`: the time of the member’s death during the expedition.
