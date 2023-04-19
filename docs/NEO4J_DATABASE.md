@@ -25,7 +25,7 @@ we get:
 In this database we are using the Neo4j guidelines for naming:
 * Node labels use CamelCase (e.g. `Expedition`)
 * Relationships use uppercase with underscores (e.g. `HIRED`, `ON_PEAK`)
-* Nodes and Relationship properties use camelCase (e.g. `expeditionId`)
+* Nodes and Relationships' properties use camelCase (e.g. `expeditionId`)
 
 For the full list of nodes and relationship properties, please [read this documentation](./SCHEMA.md).
 ## Graph Model Design Considerations
